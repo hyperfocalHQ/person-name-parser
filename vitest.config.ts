@@ -8,8 +8,8 @@ export default defineConfig({
       provider: "v8",
       reporter: ["text", "text-summary"],
       all: true,
-      include: ["**/*.ts"],
-      exclude: ["**/dist/**", "**/node_modules/**", "**/*.test.ts"],
+      include: ["src/**/*.ts"],
+      exclude: ["**/*.test.ts"],
     },
   },
 });

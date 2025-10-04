@@ -1,3 +1,4 @@
+/* v8 ignore start */
 export type ParsedName = {
   prefix?: string;
   firstName?: string;
@@ -12,3 +13,4 @@ export type ParseOptions = {
   suffixes?: Set<string>;
   particles?: Set<string>;
 };
+/* v8 ignore stop */

@@ -47,5 +47,6 @@ export function calculateConfidence(
     confidence -= 0.1;
   }
 
-  return Math.max(0, Math.min(1.0, confidence));
+  // Round to 2 decimal places to avoid floating point precision issues
+  return Math.round(Math.max(0, Math.min(1.0, confidence)) * 100) / 100;
 }
