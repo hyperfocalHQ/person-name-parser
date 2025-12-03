@@ -2,7 +2,7 @@
   "name": "person-name-parser",
   "description": "Utility that attempts to parse a person's name into its constituent parts, including a confidence rating of the output",
   "author": "Madi Ostoja",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/parser.js",
   "module": "./dist/parser.js",
