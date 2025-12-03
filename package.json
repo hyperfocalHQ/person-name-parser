@@ -4,10 +4,12 @@
   "author": "Madi Ostoja",
   "version": "1.0.2",
   "type": "module",
-  "main": "./dist/parser.mjs",
-  "types": "./dist/parser.d.mts",
+  "main": "./dist/parser.js",
+  "module": "./dist/parser.js",
+  "types": "./dist/parser.d.ts",
   "exports": {
-    ".": "./dist/parser.mjs"
+    ".": "./dist/parser.js",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "test": "vitest run --coverage",
