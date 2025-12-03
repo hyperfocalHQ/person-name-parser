@@ -4,13 +4,14 @@
   "author": "Madi Ostoja",
   "version": "1.0.1",
   "type": "module",
-  "main": "./dist/parser.js",
+  "main": "./dist/parser.mjs",
+  "types": "./dist/parser.d.mts",
   "exports": {
-    ".": "./dist/parser.js"
+    ".": "./dist/parser.mjs"
   },
   "scripts": {
     "test": "vitest run --coverage",
-    "build": "rolldown -c",
+    "build": "tsdown",
     "check": "tsc",
     "prepublishOnly": "npm run build"
   },
@@ -26,7 +27,7 @@
   "devDependencies": {
     "@types/node": "^24.6.2",
     "@vitest/coverage-v8": "^3.2.4",
-    "rolldown": "1.0.0-beta.52",
+    "tsdown": "0.17.0-beta.5",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   }
