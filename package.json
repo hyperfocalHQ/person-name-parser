@@ -8,9 +8,18 @@
   "module": "./dist/parser.js",
   "types": "./dist/parser.d.ts",
   "exports": {
-    ".": "./dist/parser.js",
+    ".": {
+      "types": "./dist/parser.d.ts",
+      "import": "./dist/parser.js",
+      "default": "./dist/parser.js"
+    },
     "./package.json": "./package.json"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
   "scripts": {
     "test": "vitest run --coverage",
     "build": "tsdown",
